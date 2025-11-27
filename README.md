@@ -16,29 +16,29 @@ HiFidelity is a native macOS music player built for audiophiles and music enthus
 
 ---
 
-## Features
+## ✨ Features
 
-### High-Fidelity Audio Playback
+#### High-Fidelity Audio Playback
 - Powered by the BASS audio library for professional-grade audio quality
 - Support for 30+ audio formats including lossless and high-resolution files
 - Built-in equalizer with customizable presets
 - Advanced audio effects and DSP processing
 
-### Comprehensive Format Support
+#### Comprehensive Format Support
 HiFidelity supports 35+ audio formats:
 
 **Lossless & Hi-Res**: FLAC, OGA, WAV, AIFF, AIF, APE, WV, TTA, DFF, DSF  
 **Compressed**: MP3, MP2, AAC, OGG, OPUS, M4A, M4B, M4P, MP4, M4V, MPC  
 **Specialized**: CAF, WEBM, SPX
 
-### Smart Music Library
+#### Smart Music Library
 - Fast, local sqlite database for instant access to your entire library
 - Automatic metadata extraction using TagLib
 - Browse by tracks, albums, artists, or genres
 - Embedded album artwork support
 - Custom playlists with full management capabilities
 
-### Intelligent Features
+#### Intelligent Features
 - **Smart Recommendations**: Auto play functionality, you don't have to think what to play next.
 - **Lyrics Display**: Synced lyrics support with real-time highlighting
 - **Advanced Search**: Find tracks instantly across your entire library
@@ -46,51 +46,45 @@ HiFidelity supports 35+ audio formats:
 - **Playback History**: Keep track of what you've listened to
 - **Favorites**: Mark and organize your favorite tracks
 
-### Modern macOS Experience
+#### Modern macOS Experience
 - Beautiful native SwiftUI interface
 - Menu bar controls and Now Playing info
 - Optimized for Apple Silicon and Intel Macs
 
-### Privacy-First Design
+#### Privacy-First Design
 - 100% offline - no internet connection required
 - Your music stays on your Mac
 - No tracking, no analytics, no data collection
 - Secure file access with macOS sandbox permissions
 
----
+## 📷 Screenshots
 
-## Screenshots
-
-### Library Views
+#### Library Views
 <div align="center">
   <img src="docs/images/Album-view.png" alt="Album View" width="392" style="margin: 10px;">
   <img src="docs/images/Home-page-artists.png" alt="Artists View" width="392" style="margin: 10px;">
   <img src="docs/images/Home-page-tracks.png" alt="Tracks View" width="392" style="margin: 10px;">
 </div>
 
-### Audio Features
+#### Audio Features
 <div align="center">
   <img src="docs/images/Equalizer.png" alt="Equalizer"width="392" style="margin: 10px;">
 </div>
 
-### Smart Features
+#### Smart Features
 <div align="center">
   <img src="docs/images/Autoplay-queue.png" alt="Autoplay Queue" height="350" style="margin: 10px;">
   <img src="docs/images/Lyrics%20support.png" alt="Lyrics Support" height="350" style="margin: 10px;">
   <img src="docs/images/Search-view.png" alt="Search View" height="350" width="392" style="margin: 10px;">
 </div>
 
----
-
-## Requirements
+#### Requirements
 
 - **macOS 14.0** (Sonoma) or later
 
----
+#### Installation
 
-## Installation
-
-### From Source
+#### From Source
 
 1. Clone the repository:
 ```bash
@@ -102,16 +96,14 @@ cd HiFidelity
 
 3. Build and run (⌘R)
 
-### First Launch
+#### First Launch
 
 1. Grant HiFidelity access to your music folders when prompted
 2. Add folders containing your music files via **Settings → Library**
 3. HiFidelity will automatically scan and import your music
 4. Start enjoying your music collection!
 
----
-
-## Technology Stack
+#### Technology Stack
 
 HiFidelity is built with modern Apple technologies:
 
@@ -122,35 +114,26 @@ HiFidelity is built with modern Apple technologies:
 
 ---
 
-## Privacy & Security
+#### Privacy & Security
 
 - **No Internet Required**: Works completely offline
 - **No Data Collection**: We don't collect or transmit any data
 - **Sandboxed**: Follows macOS security best practices
 - **Secure File Access**: Uses security-scoped bookmarks for persistent file access
 
----
 
-## Contributing
+#### Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.
 
-### Development Setup
+#### Development Setup
 
 1. Xcode 15+ required
 2. Swift 6.0+ toolchain
 3. All dependencies are included in the repository
 
----
 
-## Support
-
-- **GitHub Issues**: Report bugs and request features
-- **Sponsor**: Support development
-
----
-
-## Acknowledgments
+#### Acknowledgments
 
 - [**BASS Audio Library**](https://www.un4seen.com/)
 - [**TagLib**](https://taglib.org/)
@@ -162,5 +145,5 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 
 **Built with ❤️ for music lovers who value quality, privacy, and control**
 
-[Website](https://github.com/rvarunrathod/HiFidelity) • [Wiki](https://github.com/rvarunrathod/HiFidelity/wiki) • [Issues](https://github.com/rvarunrathod/HiFidelity/issues)
+[Website](https://rvarunrathod.github.io/HiFidelity) • [Wiki](https://github.com/rvarunrathod/HiFidelity/wiki) • [Issues](https://github.com/rvarunrathod/HiFidelity/issues)
 
