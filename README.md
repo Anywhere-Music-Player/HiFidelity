@@ -154,7 +154,7 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 - [**TagLib**](https://taglib.org/)
 - [**GRDB**](https://github.com/groue/GRDB.swift)
 - [**Sparkle**](https://github.com/sparkle-project/Sparkle)
-- [**Petrichor**](https://github.com/kushalpandya/Petrichora): Learned lot from that code
+- [**Petrichor**](https://github.com/kushalpandya/Petrichora): Learned lot from this code
 
 ---
 
