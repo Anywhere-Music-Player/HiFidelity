@@ -1,6 +1,14 @@
 # HiFidelity
+<img width="170" src="./HiFidelity/Assets.xcassets/AppIcon.appiconset/AppIcon512x512.png" alt="Petrichor App Icon" align="left"/>
 
-**A modern, offline-first music player for macOS with high-fidelity audio playback**
+<div>
+<h3>HiFidelity</h3>
+<p>A modern, offline-first music player for macOS with high-fidelity audio playback</p>
+<a href="https://github.com/kushalpandya/Petrichor/releases/latest"><img src=".github/assets/macos_download.png" width="140" alt="Download for macOS"/></a>
+</div>
+<br/><br/>
+
+****
 
 HiFidelity is a native macOS music player built for audiophiles and music enthusiasts who want complete control over their music library without relying on streaming services or cloud storage.
 
@@ -55,27 +63,21 @@ HiFidelity supports 35+ audio formats:
 
 ### Library Views
 <div align="center">
-  <img src="docs/images/Album-view.png" alt="Album View" height="350" style="margin: 10px;">
-  <img src="docs/images/Home-page-artists.png" alt="Artists View" height="350" style="margin: 10px;">
-</div>
-
-<div align="center">
-  <img src="docs/images/Home-page-tracks.png" alt="Tracks View" height="350" style="margin: 10px;">
+  <img src="docs/images/Album-view.png" alt="Album View" width="392" style="margin: 10px;">
+  <img src="docs/images/Home-page-artists.png" alt="Artists View" width="392" style="margin: 10px;">
+  <img src="docs/images/Home-page-tracks.png" alt="Tracks View" width="392" style="margin: 10px;">
 </div>
 
 ### Audio Features
 <div align="center">
-  <img src="docs/images/Equalizer.png" alt="Equalizer" height="400" style="margin: 10px;">
+  <img src="docs/images/Equalizer.png" alt="Equalizer"width="392" style="margin: 10px;">
 </div>
 
 ### Smart Features
 <div align="center">
   <img src="docs/images/Autoplay-queue.png" alt="Autoplay Queue" height="350" style="margin: 10px;">
   <img src="docs/images/Lyrics%20support.png" alt="Lyrics Support" height="350" style="margin: 10px;">
-</div>
-
-<div align="center">
-  <img src="docs/images/Search-view.png" alt="Search View" height="350" style="margin: 10px;">
+  <img src="docs/images/Search-view.png" alt="Search View" height="350" width="392" style="margin: 10px;">
 </div>
 
 ---
