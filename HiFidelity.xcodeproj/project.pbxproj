@@ -412,7 +412,7 @@
 					"$(PROJECT_DIR)/HiFidelity/deps/include/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = vr.HiFidelity.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,7 +462,7 @@
 					"$(PROJECT_DIR)/HiFidelity/deps/include/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = vr.HiFidelity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
