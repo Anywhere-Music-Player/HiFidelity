@@ -9,6 +9,15 @@
 <br/><br/>
 
 ****
+## Note: This is not malware, This app is not notarized.
+| How to fix it 
+
+1. Open System Settings
+2. Go to Privacy & Security
+3. Scroll down until you see a message saying: “HiFidelity was blocked because it is not from an identified developer.”
+4. Click Allow Anyway
+5. Open HiFidelity again
+6. When macOS asks, click Open
 
 HiFidelity is a native macOS music player built for audiophiles and music enthusiasts who want complete control over their music library without relying on streaming services or cloud storage.
 
