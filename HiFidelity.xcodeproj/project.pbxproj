@@ -51,7 +51,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BBEBF36B2EB76B33002C394C /* Exceptions for "HiFidelity" folder in "HiFidelity" target */ = {
+		BB02F34F2ED8E22A0095934F /* Exceptions for "HiFidelity" folder in "HiFidelity" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				deps/include/taglib/tlist.tcc,
@@ -62,7 +62,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		BB6077272ED3767100D9F238 /* Exceptions for "HiFidelity" folder in "Embed Libraries" phase from "HiFidelity" target */ = {
+		BB02F3512ED8E2B10095934F /* Exceptions for "HiFidelity" folder in "Embed Libraries" phase from "HiFidelity" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			attributesByRelativePath = {
 				deps/lib/libtag.2.dylib = (CodeSignOnCopy, );
@@ -78,8 +78,8 @@
 		BBDB7AD32EA796130003F406 /* HiFidelity */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				BBEBF36B2EB76B33002C394C /* Exceptions for "HiFidelity" folder in "HiFidelity" target */,
-				BB6077272ED3767100D9F238 /* Exceptions for "HiFidelity" folder in "Embed Libraries" phase from "HiFidelity" target */,
+				BB02F34F2ED8E22A0095934F /* Exceptions for "HiFidelity" folder in "HiFidelity" target */,
+				BB02F3512ED8E2B10095934F /* Exceptions for "HiFidelity" folder in "Embed Libraries" phase from "HiFidelity" target */,
 			);
 			path = HiFidelity;
 			sourceTree = "<group>";
@@ -388,7 +388,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 102;
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -437,7 +437,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 102;
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
