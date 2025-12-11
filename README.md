@@ -48,7 +48,10 @@
 - Built-in equalizer with customizable presets
 - Browse by tracks, albums, artists, or genres
 - **Smart Recommendations**: Auto play functionality, you don't have to think what to play next
-- **Lyrics**: Directly download lyrics within App and, Synced lyrics support with real-time highlighting powered by [lrclib](https://lrclib.net/)
+- **Lyrics Support**:
+  - Download lyrics directly within the app from [lrclib](https://lrclib.net/)
+  - Real-time line-by-line lyrics highlighting
+- **Mini Player**: Compact floating window with integrated queue and lyrics panels
 - **Advanced Search**: Find tracks instantly across your entire library with FTS5 
 - **Playback History**: Keep track of what you've listened to
 - **Favorites**: Mark and organize your favorite tracks
@@ -57,10 +60,11 @@
 ## 🔮 Upcoming Features
 
 - ~~Automatic scanning and updating of the music library~~ ( ✅ [1.0.4](https://github.com/rvarunrathod/HiFidelity/releases/tag/v1.0.4) )
+- ~~A compact Mini Player mode~~ ( ✅ [1.0.5](https://github.com/rvarunrathod/HiFidelity/releases/tag/v1.0.5) )
 - ReplayGain and volume normalization 
 - let user change audio output device from UI
 - Audio visualizers  (waveform / spectrum)
-- A compact Mini Player mode 
+
 - ... 
 
 ## 📷 Screenshots
