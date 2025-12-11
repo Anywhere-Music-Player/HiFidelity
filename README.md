@@ -73,27 +73,29 @@
   <img src="docs/images/Equalizer.png" alt="Equalizer" width="600" style="margin: 10px;">
 </div>
 
+
+
 #### Smart Features & Demos
 <div align="center">
   <table border="0">
     <tr>
       <td width="50%" align="center">
         <b>Mini Player</b><br>
-        <video src="docs/images/miniplayer.mp4" controls width="100%"></video>
+        <video src="https://github.com/user-attachments/assets/9f7c32b4-80f8-41e7-90a1-afa1394e65e1" controls width="100%"></video>
       </td>
       <td width="50%" align="center">
         <b>Lyrics Support</b><br>
-        <video src="docs/images/Lyrics.mp4" controls width="100%"></video>
+        <video src="https://github.com/user-attachments/assets/03c41edd-96ef-4c41-8b21-2bba1f59e535" controls width="100%"></video>
       </td>
     </tr>
     <tr>
       <td width="50%" align="center">
         <b>Advanced Search</b><br>
-        <video src="docs/images/search.mp4" controls width="100%"></video>
+        <video src="https://github.com/user-attachments/assets/eded563a-a699-46eb-82c6-3e8a4c0cd019" controls width="100%"></video>
       </td>
       <td width="50%" align="center">
         <b>Autoplay Queue</b><br>
-        <video src="docs/images/Autoplay.mp4" controls width="100%"></video>
+        <video src="https://github.com/user-attachments/assets/ef5f1d09-e1fb-4369-b8ac-1c7feafaab59" controls width="100%"></video>
       </td>
     </tr>
   </table>
