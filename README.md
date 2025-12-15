@@ -44,6 +44,7 @@
   - **Lossless & Hi-Res**: FLAC, OGA, WAV, AIFF, AIF, APE, WV, TTA, DFF, DSF  
   - **Compressed**: MP3, MP2, AAC, OGG, OPUS, M4A, M4B, M4P, MP4, M4V, MPC  
   - **Specialized**: CAF, WEBM, SPX
+- **Bit-perfect playback** with sample rate synchronization and Obtain Exclusive Access of audio device **(Hog mode)**
 - **Gapless Playback**: Seamless transitions between tracks with no silence or interruption
 - Built-in equalizer with customizable presets
 - Browse by tracks, albums, artists, or genres
@@ -52,7 +53,8 @@
   - Download lyrics directly within the app from [lrclib](https://lrclib.net/)
   - Real-time line-by-line lyrics highlighting
 - **Mini Player**: Compact floating window with integrated queue and lyrics panels
-- **Advanced Search**: Find tracks instantly across your entire library with FTS5 
+- **Audio device change** option within UI
+- **Advanced Search**: Find tracks instantly across your entire library with FTS5 (Rebuild search index if you not able to see any results: Settings -> Advanced -> Rebuild FTS)
 - **Playback History**: Keep track of what you've listened to
 - **Favorites**: Mark and organize your favorite tracks
 - Menu bar controls and Now Playing info
@@ -61,8 +63,8 @@
 
 - ~~Automatic scanning and updating of the music library~~ ( ✅ [1.0.4](https://github.com/rvarunrathod/HiFidelity/releases/tag/v1.0.4) )
 - ~~A compact Mini Player mode~~ ( ✅ [1.0.5](https://github.com/rvarunrathod/HiFidelity/releases/tag/v1.0.5) )
+- ~~Let user change audio output device from UI~~ ( ✅ [1.0.6](https://github.com/rvarunrathod/HiFidelity/releases/tag/v1.0.6) ) 
 - ReplayGain and volume normalization 
-- Let user change audio output device from UI
 - Audio visualizers (waveform / spectrum)
 - ... 
 
