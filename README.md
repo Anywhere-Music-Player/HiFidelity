@@ -150,7 +150,6 @@ brew install --cask rvarunrathod/tap/hifidelity
 - [**GRDB**](https://github.com/groue/GRDB.swift): Fast, reliable local database
 - [**Sparkle**](https://github.com/sparkle-project/Sparkle): A software update framework for macOS
 - [**Lrclib**](https://lrclib.net/): Utility for mass-downloading LRC synced lyrics for your offline music library. 
-- [**Petrichor**](https://github.com/kushalpandya/Petrichora): Learned lot from this code
 
 ---
 
