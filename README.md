@@ -44,7 +44,7 @@
 > After you install the Application and try to open it, you will see message like this: *Apple could not verify “HiFidelity.app” is free of malware that may harm your Mac or compromise your privacy.*
 >
 > ## Solution
-> you have to bypass Gatekeeper for run this (I don't want to pay apple for opensource apps)
+> you have to bypass Gatekeeper for this (I don't want to pay apple for opensource apps)
 > This will solve the occupation issue
 > 
 > ` xattr -d com.apple.quarantine /Applications/HiFidelity.app` 
