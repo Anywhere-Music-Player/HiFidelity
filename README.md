@@ -69,6 +69,7 @@
 - **Advanced Search**: Find tracks instantly across your entire library with FTS5 (Rebuild search index if you not able to see any results: Settings -> Advanced -> Rebuild FTS)
 - **Playback History**: Keep track of what you've listened to
 - **Favorites**: Mark and organize your favorite tracks
+- Import playlist with m3u or Import Folder as playlist
 - Menu bar controls and Now Playing info
 
 ## 🔮 Upcoming Features
