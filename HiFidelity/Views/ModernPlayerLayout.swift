@@ -116,6 +116,22 @@ struct ModernPlayerLayout: View {
                 selectedEntity = nil
             }
         }
+        .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("ShowTrackInfo"))) { notification in
+            // Show track info panel when requested from context menu
+            if let track = notification.object as? Track {
+                trackInfoManager.show(track: track)
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .navigateToEntity)) { notification in
+            // Navigate to entity (album or artist) when requested from context menu
+            if let entity = notification.object as? EntityType {
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                    selectedTab = .home  // Switch to home tab
+                    selectedEntity = entity  // Set the selected entity
+                }
+            }
+        }
+
     }
 }
 

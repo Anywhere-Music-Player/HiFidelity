@@ -78,8 +78,8 @@ enum About {
     static let appWebsite = "https://github.com/rvarunrathod/HiFidelity"
     static let appWiki = "https://github.com/rvarunrathod/HiFidelity/wiki"
     static let sponsor = "https://github.com/sponsors/rvarunrathod"
-    static let appVersion = "1.0.6"
-    static let appBuild = "106"
+    static let appVersion = "1.0.8"
+    static let appBuild = "108"
 }
 
 
@@ -96,6 +96,8 @@ extension Notification.Name {
     // Navigation
     static let goToLibraryFilter = Notification.Name("GoToLibraryFilter")
     static let goToHome = Notification.Name("GoToHome")
+    static let navigateToEntity = Notification.Name("NavigateToEntity")
+
     
     // Playback
     static let playEntityTracks = Notification.Name("playEntityTracks")
@@ -105,6 +107,7 @@ extension Notification.Name {
     static let trackTableSortChanged = Notification.Name("trackTableSortChanged")
     static let trackTableRowSizeChanged = Notification.Name("trackTableRowSizeChanged")
     static let focusSearchField = Notification.Name("FocusSearchField")
+    static let dismissAllFocus = Notification.Name("DismissAllFocus")
     
     // Settings
     static let openSettingsAbout = Notification.Name("OpenSettingsAbout")
