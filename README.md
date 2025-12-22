@@ -58,6 +58,7 @@
   - **Specialized**: CAF, WEBM, SPX
 - **Bit-perfect playback** with sample rate synchronization and Obtain Exclusive Access of audio device **(Hog mode)**
 - **Gapless Playback**: Seamless transitions between tracks with no silence or interruption
+- **ReplayGain**: Replay Gain from metadata or EU R128 louness normalization (turn on replayGain from audio settings) (to scan for R128 loudness, right click on track -> scan for track/album/artists -> press refresh button to load calculated value)
 - Built-in equalizer with customizable presets
 - Browse by tracks, albums, artists, or genres
 - **Smart Recommendations**: Auto play functionality, you don't have to think what to play next
@@ -77,7 +78,7 @@
 - ~~Automatic scanning and updating of the music library~~ ( ✅ [1.0.4](https://github.com/rvarunrathod/HiFidelity/releases/tag/v1.0.4) )
 - ~~A compact Mini Player mode~~ ( ✅ [1.0.5](https://github.com/rvarunrathod/HiFidelity/releases/tag/v1.0.5) )
 - ~~Let user change audio output device from UI~~ ( ✅ [1.0.6](https://github.com/rvarunrathod/HiFidelity/releases/tag/v1.0.6) ) 
-- ReplayGain and volume normalization 
+- ~~ReplayGain and volume normalization~~ ( ✅ [1.0.8](https://github.com/rvarunrathod/HiFidelity/releases/tag/v1.0.8) ) 
 - Audio visualizers (waveform / spectrum)
 - ... 
 
