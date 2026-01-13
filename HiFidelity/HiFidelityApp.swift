@@ -13,25 +13,15 @@ import AppKit
 /// AppDelegate is defined in Core/AppDelegate.swift
 @main
 struct HiFidelityApp: App {
-    // Connects to AppDelegate for macOS-specific lifecycle events
-    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
-    private let appCoordinator = AppCoordinator()
-    @StateObject private var appTheme = AppTheme.shared
 
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.openWindow) private var openWindow
 
     var body: some Scene {
         WindowGroup {
-            ModernPlayerLayout()
-                .environmentObject(DatabaseManager.shared)
-                .environmentObject(appTheme)
-                .environmentObject(appCoordinator)
-                .themedAccentColor(appTheme)
-                .onAppear {
-                    configureWindow()
-                }
+ 
+            
+    
         }
         .commands {
             // Playback Control Commands
@@ -66,9 +56,7 @@ struct HiFidelityApp: App {
         #endif
         
         Logger.info("HiFidelity SwiftUI app initialized")
-        
-        // Print system information for debugging
-        SystemInfo.printStartupInfo()
+
     }
     
     // MARK: - Window Configuration
@@ -98,7 +86,7 @@ struct HiFidelityApp: App {
             Logger.debug("Scene entered background")
             // Save queue when app goes to background
             Task {
-                await QueuePersistenceManager.shared.saveNow()
+              
             }
         case .inactive:
             Logger.debug("Scene became inactive")
@@ -112,8 +100,7 @@ struct HiFidelityApp: App {
     private func equalizerWindowContentView() -> some Scene {
         // Separate window for Equalizer (single instance only)
         Window("Equalizer", id: "audio-effects") {
-            EqualizerView()
-                .environmentObject(appTheme)
+    
         }
         .windowStyle(.hiddenTitleBar)
         .windowResizability(.contentSize)
@@ -126,9 +113,7 @@ struct HiFidelityApp: App {
         CommandGroup(replacing: .appSettings) {}
         
         CommandGroup(replacing: .appInfo) {
-            Button("About HiFidelity") {
-                NotificationCenter.default.post(name: .openSettingsAbout, object: nil)
-            }
+
         }
         
         CommandGroup(after: .appInfo) {
@@ -150,9 +135,7 @@ struct HiFidelityApp: App {
     
     private func checkForUpdatesMenuItem() -> some View {
         Button {
-            if let updater = appDelegate.updaterController?.updater {
-                updater.checkForUpdates()
-            }
+    
         } label: {
             Text("Check for Updates...")
         }
@@ -171,7 +154,7 @@ struct HiFidelityApp: App {
     
     private func miniPlayerCommand() -> some View {
         Button {
-            MiniPlayerWindowController.toggle()
+           
         } label: {
             Text("Mini Player")
         }
@@ -191,64 +174,7 @@ struct HiFidelityApp: App {
     
     @CommandsBuilder
     private func playbackCommands() -> some Commands {
-        CommandMenu("Playback") {
-            Button(action: {
-                PlaybackController.shared.togglePlayPause()
-            }) {
-                Text(PlaybackController.shared.isPlaying ? "Pause" : "Play")
-            }
-            .keyboardShortcut(.space, modifiers: [])
-            
-            Divider()
-            
-            Button("Next Track") {
-                PlaybackController.shared.next()
-            }
-            .keyboardShortcut(.rightArrow, modifiers: .command)
-            
-            Button("Previous Track") {
-                PlaybackController.shared.previous()
-            }
-            .keyboardShortcut(.leftArrow, modifiers: .command)
-            
-            Divider()
-            
-            Button("Seek Forward") {
-                PlaybackController.shared.seekForward(10.0)
-            }
-            .keyboardShortcut(.rightArrow, modifiers: .shift)
-            
-            Button("Seek Backward") {
-                PlaybackController.shared.seekBackward(10.0)
-            }
-            .keyboardShortcut(.leftArrow, modifiers: .shift)
-            
-            Divider()
-            
-            Button("Volume Up") {
-                let newVolume = min(PlaybackController.shared.volume + 0.05, 1.0)
-                PlaybackController.shared.volume = newVolume
-            }
-            .keyboardShortcut(.upArrow, modifiers: .command)
-            
-            Button("Volume Down") {
-                let newVolume = max(PlaybackController.shared.volume - 0.05, 0.0)
-                PlaybackController.shared.volume = newVolume
-            }
-            .keyboardShortcut(.downArrow, modifiers: .command)
-            
-            Divider()
-            
-            Button("Toggle Shuffle") {
-                PlaybackController.shared.toggleShuffle()
-            }
-            .keyboardShortcut("s", modifiers: .command)
-            
-            Button("Toggle Repeat") {
-                PlaybackController.shared.toggleRepeat()
-            }
-            .keyboardShortcut("r", modifiers: .command)
-        }
+   
     }
 
 }
