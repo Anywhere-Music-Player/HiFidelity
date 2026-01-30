@@ -1,8 +1,8 @@
 //
-//  MetadataExtractor 2.swift
-//  HiFidelity
+//  
 //
-//  Created by Varun Rathod on 23/10/25.
+//
+//
 //
 
 
@@ -832,132 +832,134 @@ struct MetadataManagement {
 
 // MARK: - TrackMetadata
 
-struct TrackMetadata {
-    let url: URL
-    var title: String?
-    var artist: String?
-    var album: String?
-    var composer: String?
-    var genre: String?
-    var year: String?
-    var duration: Double = 0
-    var artworkData: Data?
-    var albumArtist: String?
-    var trackNumber: Int?
-    var totalTracks: Int?
-    var discNumber: Int?
-    var totalDiscs: Int?
-    var rating: Int?
-    var compilation: Bool = false
-    var releaseDate: String?
-    var originalReleaseDate: String?
-    var bpm: Int?
-    var mediaType: String?
-    var bitrate: Int?
-    var sampleRate: Int?
-    var channels: Int?
-    var codec: String?
-    var bitDepth: Int?
+public struct TrackMetadata {
+    public let url: URL
+    public var title: String?
+    public var artist: String?
+    public var album: String?
+    public var composer: String?
+    public var genre: String?
+    public var year: String?
+    public var duration: Double = 0
+    public var artworkData: Data?
+    public var albumArtist: String?
+    public var trackNumber: Int?
+    public var totalTracks: Int?
+    public var discNumber: Int?
+    public var totalDiscs: Int?
+    public var rating: Int?
+    public var compilation: Bool = false
+    public var releaseDate: String?
+    public var originalReleaseDate: String?
+    public var bpm: Int?
+    public var mediaType: String?
+    public var bitrate: Int?
+    public var sampleRate: Int?
+    public var channels: Int?
+    public var codec: String?
+    public var bitDepth: Int?
     
-    var sortTitle: String?
-    var sortArtist: String?
-    var sortAlbum: String?
-    var sortAlbumArtist: String?
+    public var sortTitle: String?
+    public var sortArtist: String?
+    public var sortAlbum: String?
+    public var sortAlbumArtist: String?
     
-    var extended: ExtendedMetadata
+    public var extended: ExtendedMetadata
     
-    init(url: URL) {
+    public init(url: URL) {
         self.url = url
         self.extended = ExtendedMetadata()
     }
 }
 
 
-struct ExtendedMetadata: Codable {
+public struct ExtendedMetadata: Codable {
+    public init() {}
     // Additional identifiers
-    var isrc: String?
-    var barcode: String?
-    var catalogNumber: String?
+    public var isrc: String?
+    public var barcode: String?
+    public var catalogNumber: String?
 
     // MusicBrainz identifiers
-    var musicBrainzArtistId: String?
-    var musicBrainzAlbumId: String?
-    var musicBrainzAlbumArtistId: String?
-    var musicBrainzTrackId: String?
-    var musicBrainzReleaseGroupId: String?
-    var musicBrainzWorkId: String?
+    public var musicBrainzArtistId: String?
+    public var musicBrainzAlbumId: String?
+    public var musicBrainzAlbumArtistId: String?
+    public var musicBrainzTrackId: String?
+    public var musicBrainzReleaseGroupId: String?
+    public var musicBrainzWorkId: String?
 
     // Acoustic fingerprinting
-    var acoustId: String?
-    var acoustIdFingerprint: String?
+    public var acoustId: String?
+    public var acoustIdFingerprint: String?
 
     // Additional credits
-    var originalArtist: String?
-    var producer: String?
-    var engineer: String?
-    var lyricist: String?
-    var conductor: String?
-    var remixer: String?
-    var performer: [String: String]?
+    public var originalArtist: String?
+    public var producer: String?
+    public var engineer: String?
+    public var lyricist: String?
+    public var conductor: String?
+    public var remixer: String?
+    public var performer: [String: String]?
 
     // Publishing/Label info
-    var label: String?
-    var publisher: String?
-    var copyright: String?
-    var releaseType: String?          // Album, EP, Single, Compilation, Live, etc.
-    var releaseCountry: String?       // ISO country code
-    var artistType: String?           // Person, Group, Orchestra, Choir, etc.
+    public var label: String?
+    public var publisher: String?
+    public var copyright: String?
+    public var releaseType: String?          // Album, EP, Single, Compilation, Live, etc.
+    public var releaseCountry: String?       // ISO country code
+    public var artistType: String?           // Person, Group, Orchestra, Choir, etc.
 
     // Additional descriptive fields
-    var key: String? // Musical key
-    var mood: String?
-    var language: String?
-    var lyrics: String?
-    var comment: String?
-    var subtitle: String?
-    var grouping: String? // Work/grouping for classical
-    var movement: String? // Classical movement
+    public var key: String? // Musical key
+    public var mood: String?
+    public var language: String?
+    public var lyrics: String?
+    public var comment: String?
+    public var subtitle: String?
+    public var grouping: String? // Work/grouping for classical
+    public var movement: String? // Classical movement
 
     // Technical metadata
-    var replayGainAlbum: String?
-    var replayGainTrack: String?
-    var encodedBy: String?
-    var encoderSettings: String?
+    public var replayGainAlbum: String?
+    public var replayGainTrack: String?
+    public var encodedBy: String?
+    public var encoderSettings: String?
 
     // Additional date information
-    var recordingDate: String?
+    public var recordingDate: String?
 
     // Podcast/audiobook specific
-    var podcastUrl: String?
-    var podcastCategory: String?
-    var podcastDescription: String?
-    var podcastKeywords: String?
+    public var podcastUrl: String?
+    public var podcastCategory: String?
+    public var podcastDescription: String?
+    public var podcastKeywords: String?
 
     // iTunes specific fields not covered by main columns
-    var itunesAdvisory: String?
-    var itunesAccount: String?
-    var itunesPurchaseDate: String?
+    public var itunesAdvisory: String?
+    public var itunesAccount: String?
+    public var itunesPurchaseDate: String?
 
     // Gapless playback info
-    var gaplessData: String?
+    public var gaplessData: String?
 
     // Additional sort fields
-    var sortComposer: String?
+    public var sortComposer: String?
 
     // Custom fields for future extensibility
-    var customFields: [String: String]?
+    public var customFields: [String: String]?
 
     // Helper to convert to/from JSON
-    func toJSON() -> String? {
+    public func toJSON() -> String? {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .sortedKeys
         guard let data = try? encoder.encode(self) else { return nil }
         return String(data: data, encoding: .utf8)
     }
 
-    static func fromJSON(_ json: String?) -> ExtendedMetadata? {
+    public static func fromJSON(_ json: String?) -> ExtendedMetadata? {
         guard let json = json,
               let data = json.data(using: .utf8) else { return nil }
         return try? JSONDecoder().decode(ExtendedMetadata.self, from: data)
     }
 }
+

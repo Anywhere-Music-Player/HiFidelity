@@ -1,8 +1,8 @@
 //
 //  LogLevel.swift
-//  HiFidelity
+//  
 //
-//  Created by Varun Rathod on 21/10/25.
+//
 //
 
 

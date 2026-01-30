@@ -7,15 +7,16 @@
 //
 
 import Foundation
-import AppKit
+import os.log
+@_implementationOnly import SwiftTagLibObjC
 
 /// Swift wrapper for TagLib metadata extraction
-struct TagLibMetadataManager {
+public struct TagLibMetadataManager {
     
     /// Extract metadata from an audio file using TagLib
     /// - Parameter url: URL to the audio file
     /// - Returns: TrackMetadata object populated with extracted data
-    static func extractMetadata(from url: URL) -> TrackMetadata {
+    public static func extractMetadata(from url: URL) -> TrackMetadata {
         var metadata = TrackMetadata(url: url)
         
         // Try extracting with TagLib
@@ -25,7 +26,7 @@ struct TagLibMetadataManager {
             // Map TagLib metadata to our TrackMetadata structure
             mapTagLibMetadataToTrackMetadata(taglibMetadata, into: &metadata)
         } catch {
-            Logger.error("TagLib extraction failed for \(url.lastPathComponent): \(error.localizedDescription)")
+            os_log("TagLib extraction failed for %{public}@ : %{public}@", type: .error, url.lastPathComponent, error.localizedDescription)
             // Return metadata with at least filename as title
             metadata.title = url.deletingPathExtension().lastPathComponent
         }
@@ -37,7 +38,7 @@ struct TagLibMetadataManager {
     /// - Parameters:
     ///   - url: URL to the audio file
     ///   - completion: Completion handler with extracted metadata
-    static func extractMetadata(from url: URL, completion: @escaping (TrackMetadata) -> Void) {
+    public static func extractMetadata(from url: URL, completion: @escaping (TrackMetadata) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async {
             let metadata = extractMetadata(from: url)
             DispatchQueue.main.async {
@@ -49,13 +50,13 @@ struct TagLibMetadataManager {
     /// Check if a file format is supported by TagLib
     /// - Parameter fileExtension: File extension (without dot)
     /// - Returns: true if supported, false otherwise
-    static func isSupportedFormat(_ fileExtension: String) -> Bool {
+    public static func isSupportedFormat(_ fileExtension: String) -> Bool {
         return TagLibMetadataExtractor.isSupportedFormat(fileExtension)
     }
     
     /// Get list of all supported file extensions
     /// - Returns: Array of supported extensions
-    static func supportedExtensions() -> [String] {
+    public static func supportedExtensions() -> [String] {
         return TagLibMetadataExtractor.supportedExtensions()
     }
     
@@ -313,7 +314,7 @@ extension TagLibMetadataManager {
     }
     
     /// Create a human-readable description of supported formats
-    static var supportedFormatsDescription: String {
+    public static var supportedFormatsDescription: String {
         let extensions = supportedExtensions()
         let uppercased = extensions.map { $0.uppercased() }
         return uppercased.joined(separator: ", ")
@@ -322,7 +323,7 @@ extension TagLibMetadataManager {
     /// Validate if a URL points to a supported audio file
     /// - Parameter url: File URL to validate
     /// - Returns: true if file exists and has supported extension
-    static func isValidAudioFile(at url: URL) -> Bool {
+    public static func isValidAudioFile(at url: URL) -> Bool {
         guard FileManager.default.fileExists(atPath: url.path) else {
             return false
         }
@@ -336,13 +337,13 @@ extension TagLibMetadataManager {
 
 extension TagLibMetadataManager {
     
-    enum MetadataError: Error, LocalizedError {
+    public enum MetadataError: Error, LocalizedError {
         case fileNotFound
         case unsupportedFormat
         case extractionFailed(String)
         case invalidFileURL
         
-        var errorDescription: String? {
+        public var errorDescription: String? {
             switch self {
             case .fileNotFound:
                 return "Audio file not found"
@@ -359,7 +360,7 @@ extension TagLibMetadataManager {
     /// Extract metadata with Result type for better error handling
     /// - Parameter url: File URL
     /// - Returns: Result with metadata or error
-    static func extractMetadataResult(from url: URL) -> Result<TrackMetadata, MetadataError> {
+    public static func extractMetadataResult(from url: URL) -> Result<TrackMetadata, MetadataError> {
         guard url.isFileURL else {
             return .failure(.invalidFileURL)
         }
